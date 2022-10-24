@@ -1,0 +1,53 @@
+
+body{
+    margin:50px;
+    padding:10px;
+    font-family:"Helvetica";
+    margin-top:10px;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/001/782/780/small/light-purple-pink-gradient-blur-backdrop-vector.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body h1{
+    font-size: 40px;
+    font-weight:bolder
+}
+
+body h2
+{
+    
+}
+
+.display-text-gradient{
+    text-align: center;
+    background: linear-gradient(to right,#FFFF 10%, #FFF 20%, rgb(208, 109, 247) 60%);
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.btn{
+    border:none;
+    display: inline;
+    flex: 1 1 auto;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px;
+    border-radius:10px;
+    font-size:25px;
+    box-shadow:3px 5px;
+}
+
+.btn:hover {
+    background-position: right center;
+  }
+  
+.upload_btn{
+    background-image: linear-gradient(to right, blueviolet 0%, rgb(252, 140, 215) 51% , red 100%);
+}

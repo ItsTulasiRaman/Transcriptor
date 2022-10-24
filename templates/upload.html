@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<p>
+	{% with messages = get_flashed_messages() %}  <!-- fetches all the flash messages enclosed within "flask()" -->
+	  {% if messages %}
+		<ul>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+{% if filename %}
+	<div>
+		<video autoplay="autoplay" controls="controls" preload="preload">
+			<source src="{{ url_for('display_video', filename=filename) }}" type="video/mp4"></source>
+		</video>
+	</div>
+{% endif %}
+
+<label for="text-speech-recognition" class="display-text-gradient">Converted text appears here as soon as the speech recognition is processed: </label>
+<br><br>
+<textarea id="text-speech-recognition" rows="15" cols="90" readonly>{{speech_text}}</textarea>
+
+
+<h2>Select a video/audio file</h2>
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input style="border-radius:10px;background-color:blueviolet;font-size:15px" type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input class="btn upload_btn" type="submit" value="Upload">
+	</p>
+
+</form>
+{% endblock body %}
