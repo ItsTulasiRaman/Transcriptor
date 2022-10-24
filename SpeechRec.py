@@ -1,9 +1,8 @@
 #import library
 import speech_recognition as sr
 
-
 def speech_recognition(filename):
-    audio_file = "./static/uploads/"+filename
+    audio_file = filename
     # Initialize recognizer class (for recognizing the speech)
     r = sr.Recognizer()
 

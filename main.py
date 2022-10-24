@@ -20,15 +20,17 @@ def upload_video():
 		return redirect(request.url)
 	else:
 		filename = secure_filename(file.filename)
-		file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))  
+		file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename)) 
+		os.rename(app.config['UPLOAD_FOLDER']+filename, app.config['UPLOAD_FOLDER']+"audiodata.wav") 
+		filename=app.config['UPLOAD_FOLDER']+"audiodata.wav"
 		#print('upload_video filename: ' + filename)
-		flash('Video successfully uploaded and displayed below')
+		flash('Audio successfully uploaded and displayed below')
 		return render_template('upload.html', filename=filename,speech_text = speech_recognition(filename))
 
 @app.route('/display/<filename>')
 def display_video(filename):
 	#print('display_video filename: ' + filename)
-	return redirect(url_for('static', filename='uploads/' + filename), code=301)
+	return redirect(url_for('', filename=filename), code=301)
 
 
 if __name__ == "__main__":

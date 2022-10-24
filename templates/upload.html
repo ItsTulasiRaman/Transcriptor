@@ -15,9 +15,9 @@
 </p>
 {% if filename %}
 	<div>
-		<video autoplay="autoplay" controls="controls" preload="preload">
-			<source src="{{ url_for('display_video', filename=filename) }}" type="video/mp4"></source>
-		</video>
+		<audio autoplay="autoplay" controls="controls" preload="preload" style="margin-top:0">
+			<source src="display/{{filename}}" type="audio/wav"></source>
+		</audio>
 	</div>
 {% endif %}
 
@@ -30,7 +30,7 @@
 <form method="post" action="/" enctype="multipart/form-data">
     <dl>
 		<p>
-			<input style="border-radius:10px;background-color:blueviolet;font-size:15px" type="file" name="file" autocomplete="off" required>
+			<input style="border-radius:10px;background-color:blueviolet;font-size:15px" type="file" name="file" autocomplete="off" accept=".wav" required>
 		</p>
     </dl>
     <p>
