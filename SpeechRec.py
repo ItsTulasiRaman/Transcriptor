@@ -2,8 +2,8 @@
 import speech_recognition as sr
 
 
-def speech_recognition():
-    audio_file = 'f2bjrop1.0.wav'
+def speech_recognition(filename):
+    audio_file = "./static/uploads/"+filename
     # Initialize recognizer class (for recognizing the speech)
     r = sr.Recognizer()
 
@@ -19,8 +19,6 @@ def speech_recognition():
             
             # using google speech recognition
             text = r.recognize_google(audio_text)
-            print('Converting audio transcripts into text ...')
-            print("Converted test: ")
             return text
         
         except:

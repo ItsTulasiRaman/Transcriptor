@@ -23,7 +23,7 @@ def upload_video():
 		file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))  
 		#print('upload_video filename: ' + filename)
 		flash('Video successfully uploaded and displayed below')
-		return render_template('upload.html', filename=filename,speech_text = speech_recognition())
+		return render_template('upload.html', filename=filename,speech_text = speech_recognition(filename))
 
 @app.route('/display/<filename>')
 def display_video(filename):
