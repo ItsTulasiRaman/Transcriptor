@@ -1,4 +1,3 @@
-"""
 #import library
 import speech_recognition as sr
 
@@ -25,16 +24,18 @@ def speech_recognition(filename):
             print('Sorry.. run again...')
 
 """
-
 import speech_recognition as sr
 from os import path
 from pydub import AudioSegment
 import wave, math, contextlib
 import moviepy
 
-def speech_recognition(filename):                                                                   
+
+def speech_recognition(filename):
+
+    # files                                                                         
     src = filename
-    dst = filename
+    dst = "test.wav"
 
     # this will return a tuple of root and extension
     split_tup = path.splitext(src)
@@ -44,7 +45,7 @@ def speech_recognition(filename):
     file_name = split_tup[0]
     file_extension = split_tup[1]
 
-    #audio = "test.mp3"
+    audio = "test.mp3"
 
     #checking if it is a video file
     #and converting it to .mp3
@@ -72,12 +73,12 @@ def speech_recognition(filename):
     for i in range(0, total_duration):
         with sr.AudioFile(transcribed_audio_file_name) as source:
             audio = r.record(source, offset=i*60, duration=60)
-            f = open("transcription.txt", "a")
-            f.write(r.recognize_google(audio))
-            f.write(" ")
-            f.close()
+        f = open("transcription.txt", "a")
+        f.write(r.recognize_google(audio))
+        f.write(" ")
+    f.close()
 
-    with open('transcription.txt', 'r') as file:
-        speech_text = file.read()
+filename = "long_audio.mp3"
+speech_recognition(filename)
 
-    return speech_text
+"""
