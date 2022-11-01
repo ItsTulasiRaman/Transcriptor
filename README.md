@@ -8,3 +8,4 @@ All you need to have:
 &nbsp;&nbsp;**+ flask** installed in you local machine
 <br>
 &nbsp;&nbsp;**+** pip installed **SpeechRecognition** module
+&nbsp;&nbsp;**+ Proper internet connection**
