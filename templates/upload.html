@@ -16,7 +16,7 @@
 {% if filename %}
 	<div>
 		<audio autoplay="autoplay" controls="controls" preload="preload" style="margin-top:0">
-			<source src="display/{{filename}}" type="audio/wav"></source>
+			<source src="../static/uploads/audiodata.wav" type="audio/wav"></source>
 		</audio>
 		<!--{{filename}}-->
 	</div>
@@ -31,7 +31,7 @@
 <form method="post" action="/" enctype="multipart/form-data">
     <dl>
 		<p>
-			<input style="border-radius:10px;background-color:blueviolet;font-size:15px" type="file" name="file" autocomplete="off" accept=".wav" required>
+			<input style="border-radius:10px;background-color:blueviolet;font-size:15px" type="file" name="file" autocomplete="off" required>
 		</p>
     </dl>
     <p>
