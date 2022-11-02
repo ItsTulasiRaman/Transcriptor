@@ -27,7 +27,7 @@ def upload_video():
 			sound = AudioSegment.from_mp3(file_loc)
 			sound.export((app.config['UPLOAD_FOLDER']+"audiodata.wav"), format="wav")
 		elif(file_loc.endswith(".wav")):
-		  os.rename(file_loc, app.config['UPLOAD_FOLDER']+"audiodata.wav") 
+		    os.rename(file_loc, app.config['UPLOAD_FOLDER']+"audiodata.wav") 
 		filename=app.config['UPLOAD_FOLDER']+"audiodata.wav"
 		#print('upload_video filename: ' + filename)
 		flash('Audio successfully uploaded and displayed below')
