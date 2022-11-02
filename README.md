@@ -20,5 +20,5 @@ All you need to have:
 **For linux (or) WSL:**
 <br>&nbsp;&nbsp;**"sudo apt-get install ffmpeg"**
 <br>**ForWindows:**
-&nbsp;&nbsp;**Step 1:** Open your powershell as Administrator.
-&nbsp;&nbsp;**Step 2:** "winget install ffmpeg"
+<br>&nbsp;&nbsp;**Step 1:** Open your powershell as Administrator.
+<br>&nbsp;&nbsp;**Step 2:** "winget install ffmpeg"
