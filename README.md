@@ -5,20 +5,20 @@ For this project I've used the <i>SpeechRecognition</i> module in python to proc
 <br>
 All you need to have:
 <br>
-&nbsp;&nbsp;**+ flask** installed in you local machine
+&nbsp;&nbsp;&nbsp;&nbsp;**+ flask** installed in you local machine
 <br>
-&nbsp;&nbsp;**+** pip installed **SpeechRecognition** module
+&nbsp;&nbsp;&nbsp;&nbsp;**+** pip installed **SpeechRecognition** module
 <br>
-&nbsp;&nbsp;**+ Proper internet connection**
+&nbsp;&nbsp;&nbsp;&nbsp;**+ Proper internet connection**
 <br>
-&nbsp;&nbsp;**+** pip installed **pydub** module. 
+&nbsp;&nbsp;&nbsp;&nbsp;**+** pip installed **pydub** module. 
 <br>
 **Installation of ffmpeg is mandatory to convert if the user inputs a mp3 file.** 
 <br>
 **How to install ffmpeg?**
 <br>
 **For linux (or) WSL:**
-<br>&nbsp;&nbsp;**"sudo apt-get install ffmpeg"**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;**Run "sudo apt-get install ffmpeg" in your terminal**
 <br>**ForWindows:**
-<br>&nbsp;&nbsp;**Step 1:** Open your powershell as Administrator.
-<br>&nbsp;&nbsp;**Step 2:** "winget install ffmpeg"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;**Step 1:** Open your powershell as Administrator.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;**Step 2:** Run "winget install ffmpeg"
