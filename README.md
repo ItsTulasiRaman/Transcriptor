@@ -23,4 +23,4 @@ All you need to have:
 <br>&nbsp;&nbsp;&nbsp;&nbsp;**Step 1:** Open your powershell as Administrator.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;**Step 2:** Run "winget install ffmpeg"
 <br><br>
-[Check for the complete documentation here](TranscriptorReadme/Transcriptor readme.md)
+[Check for the complete documentation here] (TranscriptorReadme/Transcriptor-readme.md)
