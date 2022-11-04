@@ -23,4 +23,9 @@ All you need to have:
 <br>&nbsp;&nbsp;&nbsp;&nbsp;**Step 1:** Open your powershell as Administrator.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;**Step 2:** Run "winget install ffmpeg"
 <br><br>
+
+**How to run?**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;**Step 1:** Run **pipenv shell** inside terminal to activate virtual environment.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;**Step 2:** Run **python3 main.py** and open your [http://localhost/5000](http://localhost/5000).
+<br><br>
 [Check for the complete documentation here](TranscriptorReadme/Transcriptor-readme.md)
